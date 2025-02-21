@@ -1,37 +1,51 @@
-int main() {
-    char cidadeNome[100];
-    char idCidade[10];
+#include <stdio.h>
 
-    int populacao;
-    double Area;
-    double pib;
-    int numeroTuristicos;
+int main(){
 
-    printf("Qual o nome da cidade que voce deseja cadastrar? ");
-    scanf(" %99s", cidadeNome);
 
-    printf("Qual o codigo que voce deseja colocar? ");
-    scanf(" %9s", idCidade);
+char estado;
+char idCidade[5];
+char nomeCidade[50];
+int populacao;
+double area;
+double pib;
+int pontosTuristicos;
 
-    printf("Me fale o tamanho da populacao da sua cidade: ");
-    scanf(" %d", &populacao);
 
-    printf("Quantos quilometros quadrados sua cidade tem? ");
-    scanf(" %lf", &Area);
+printf("Seja bem vindo ao jogo super trunfo!!\n\n");
+printf("\nVamos dar inicio ao jogo\n");
 
-    printf("Qual o PIB da sua cidade? ");
-    scanf(" %lf", &pib);
+printf("Qual o estado da carta?");
+scanf(" %c", &estado);
 
-    printf("Qual a quantidade de turistas por ano na sua cidade? ");
-    scanf(" %d", &numeroTuristicos);
+printf("Qual sera o codigo dela? ");
+scanf(" %s", &idCidade);
 
-    printf("\nAqui estão as informacoes da sua carta:\n");
-    printf("Cidade: %s\n", cidadeNome);
-    printf("Codigo: %s\n", idCidade);
-    printf("Populacao: %d\n", populacao);
-    printf("Area: %.2lf km²\n", Area);
-    printf("PIB: %.2lf\n", pib);
-    printf("Numero de turistas: %d\n", numeroTuristicos);
 
-    return 0;
+printf("Qual o nome da cidade que voce deseja cadastrar? ");
+scanf(" %s", &nomeCidade);
+
+
+printf("Qual a população da sua cidade?");
+scanf(" %d", &populacao);
+
+printf("Qual e a area da sua cidade?");
+scanf(" %lf", &area);
+
+printf("Qual e o pib da sua cidade?");
+scanf(" %lf", &pib);
+
+printf("Quantos pontos turisticos sua cidade tem?");
+scanf(" %d", &pontosTuristicos);
+
+printf("Estado: %c\n", estado);
+printf("O id da sua cidade e: %s\n", idCidade);
+printf("O nome da sua cidade e: %s\n", nomeCidade);
+printf("A populacao da sua cidade e: %d\n", populacao);
+printf("A area da sua cidade e: %.2f\n", area);
+printf("o pib da sua cidade e: %.2f\n" , pib);
+printf("O numero de pontos turisticos: %d\n", pontosTuristicos);
+
+return 0;
+
 }
