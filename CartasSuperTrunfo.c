@@ -11,6 +11,8 @@ double area;
 double pib;
 int pontosTuristicos;
 
+//----------------------------------------------------------------------------------------------
+
 printf("Seja bem vindo ao jogo super trunfo!!\n\n");
 printf("\nVamos dar inicio ao jogo\n");
 
@@ -43,6 +45,8 @@ scanf(" %lf", &pib);
 printf("Quantos pontos turisticos sua cidade tem?");
 scanf(" %d", &pontosTuristicos);
 
+double densidadePopulacional = populacao / area;
+double pibPerCapita = pib / populacao;
 
 printf("Estado: %c\n", estado);
 printf("O id da sua cidade e: %s\n", idCidade);
@@ -51,6 +55,8 @@ printf("A populacao da sua cidade e: %d\n", populacao);
 printf("A area da sua cidade e: %.2f\n", area);
 printf("o pib da sua cidade e: %.2f\n" , pib);
 printf("O numero de pontos turisticos: %d\n", pontosTuristicos);
+printf("A densidade populacional da cidade: %s e de: %.2f\n", nomeCidade, densidadePopulacional);
+printf("O pib per capita da cidade: %s e de: %.2f\n", nomeCidade, pibPerCapita);
 
 return 0;
 
