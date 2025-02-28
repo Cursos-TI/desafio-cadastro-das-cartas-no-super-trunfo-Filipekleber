@@ -6,7 +6,7 @@ int main(){
 char estado;
 char idCidade[5];
 char nomeCidade[50];
-int populacao;
+int populacao; 
 double area;
 double pib;
 int pontosTuristicos;
@@ -131,13 +131,27 @@ printf("*Vamos para as comparacoes*\n");
 printf("Densidade populacional da primeira cidade: %.2f\n", densidadePopulacional);
 printf("Densidade populacional da segunda cidade: %.2f\n", densidadePopulacional02);
 
-if (densidadePopulacional < densidadePopulacional02) {
-    printf("A primeira carta venceu!\n");
-} else if (densidadePopulacional > densidadePopulacional02) {
-    printf("A segunda carta venceu!\n");
-} else {
-    printf("Empate!\n");
+//-------------------------------------------------------------------------------------------------------------------------------
+
+//comparação para saber qual carta foi a vencedora, com o atributo (população)
+if (populacao > populacao02){
+    printf("A carta número 01 venceu!! Com a maior população!!\n");
+}else{
+    printf("A carta número 02 venceu!! Com a maior população!!\n");
 }
+
+//comparação com o atributo densidade populacional.
+if (densidadePopulacional > densidadePopulacional02){
+    printf("A carta número 01 venceu!!\n");
+}else{
+    printf("A carta número 02 venceu!!\n");
+}
+
+
+
+printf("Fim de jogo!\n");
+
+
 
 return 0;
 
